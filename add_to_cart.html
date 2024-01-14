@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSport</title>
+  <link rel="stylesheet" href="./assets/css/add_to_cart.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="stlyle.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--------------------------------------- Begin Header ---------------------------------->
+  <div class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="#">
+          <span><i class="fa-regular fa-paper-plane icon-logo-web"></i></span>
+          <span class="text-logo-web">Super</span>Sport
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div iv class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./home.html">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Danh mục sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Bóng đá</a></li>
+                <li><a class="dropdown-item" href="#">Golf</a></li>
+                <li><a class="dropdown-item" href="#">Cầu lông</a></li>
+                <li><a class="dropdown-item" href="#">Leo núi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./introduce.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="icon-header" href="#" title="Thông báo" data-bs-toggle="popover" data-bs-placement="bottom"
+              data-bs-content="Không có thông báo!"><i class="icon bi bi-bell nav-link"
+                style="margin-top: 6px; font-size: 25px; "></i></a>
+
+            <a class="icon-header" href="./cart.html"><i class="icon bi bi-cart2 nav-link" style="color: #fff;"></i></a>
+            <a class="icon-header" href="./log_in.html"><i class="icon big bi bi-person-circle nav-link"
+                style="font-size: 30px; padding-top: 10px; padding-bottom: 0px; "></i></a>
+
+            <script>
+              var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+              })
+            </script>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--------------------------------------- End Header ---------------------------------->
+
+  <!--  -->
+  <div class="add-cart-section">
+    <div class="cart-heading">
+      <a href="./add_to_cart.html">Shopping Cart</a>
+      <a href="#" class="hide-checkout"><span><i class="fa-solid fa-angle-right icon-heading-right"></i></span>Checkout details</a>
+    </div>
+
+    <div class="product-add-cart">
+      <!-- Begin product -->
+      <div class="desc-product-buy">
+        <div class="header-add-cart">
+          <h4 class="text-desc-buy product-buy">Product</h4>
+          <h4 class="text-desc-buy"><span class="hide-col-product">Price</span></h4>
+          <h4 class="text-desc-buy"><span class="hide-col-product">Quantity</span></h4>
+          <h4 class="text-desc-buy hide-header"><span class="hide-col-product">Subtotal</span></h4>
+        </div>
+
+        <div class="product-buy-add">
+          <a href="#"><i class="fa-regular fa-circle-xmark close-product"></i></a>
+          <img src="assets/img/content/cart/cart-product/aodtqg1-cart.jpg" alt="" class="img-add-cart">
+          <div class="text-desc-cart">Áo đội tuyển quốc gia Bồ Đào Nha sân khách</div>
+          <p class="money-add-cart">100.000đ</p>
+
+          <div class="increase-product-cart">
+            <div class="quantity-cart-number">
+              <button class="btn-add-cart" onclick="decreaseQuantity()">-</button>
+              <span id="quantity" class="btn-add-cart1">1</span>
+              <button class="btn-add-cart" onclick="increaseQuantity()">+</button>
+            </div>
+
+            <script>
+              // Hàm tăng số lượng sản phẩm 
+              var quantityElement = document.getElementById('quantity');
+              function decreaseQuantity() {
+                var currentQuantity = parseInt(quantityElement.innerText);
+
+                if (currentQuantity > 1) {
+                  quantityElement.innerText = currentQuantity - 1;
+                }
+              }
+
+              function increaseQuantity() {
+                var currentQuantity = parseInt(quantityElement.innerText);
+                quantityElement.innerText = currentQuantity + 1;
+              }
+            </script>
+          </div>
+
+          <p class="subtotal-money">100.000đ</p>
+
+          <div class="continue-shopping">
+            <a href="./home.html">
+              <i class="fa-solid fa-arrow-left icon-continue"></i>
+              Continue Shopping
+            </a>
+          </div>
+
+          <button class="update-cart">
+            <a href="#">
+                Update cart
+            </a>
+          </button>
+        </div>
+
+      </div>
+
+      <div class="totals-product-buy">
+        <h4>Cart Totals</h4>
+        <p class="subtotal-heading">Subtotal<span class="sub-total">100.000đ</span></p>
+        <p class="subtotal-heading">Total<span class="sub-total-cart">100.000đ</span></p>
+        <a href="pay.html" class="btn-checkout">Proceed to checkout</a>
+
+        <div class="coupon-cart">
+          <label for="coupon" class="coupon-lable">
+            <i class="fa-solid fa-tag"></i>
+            Coupon
+          </label>
+          <input id="coupon" type="text" class="coupon-input" placeholder="Coupon code">
+          <div class="rule-coupon"></div>
+        </div>
+        <button class="coupon-apply">Apply coupon</button>
+
+      </div>
+    </div>
+    <!-- End product -->
+  </div>
+  <!--------------------------------------- Begin Footer-------------------------------------->
+  <footer class="footer">
+    <div class="footer-bottom">
+      Copyright 2010 © SuperSport
+    </div>
+  </footer>
+  <!--------------------------------------- Begin  Footer-------------------------------------->
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áo bóng đá CLB</title>
+    <link rel="stylesheet" href="./assets/css/football1.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <!--------------------------------------- Begin Header ---------------------------------->
+    <div class="header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fs-2" href="./home.html">
+                    <span><i class="fa-regular fa-paper-plane icon-logo-web"></i></span>
+                    <span class="text-logo-web">Super</span>Sport
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div iv class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./home.html">Trang chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" aria-current="page" href="#" id="navbarDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Danh mục sản phẩm
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="./football.html">Bóng đá</a></li>
+                                <li><a class="dropdown-item" href="#">Golf</a></li>
+                                <li><a class="dropdown-item" href="#">Cầu lông</a></li>
+                                <li><a class="dropdown-item" href="#">Leo núi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./introduce.html">Giới thiệu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Liên hệ</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="icon-header" href="#" title="Thông báo" data-bs-toggle="popover"
+                            data-bs-placement="bottom" data-bs-content="Không có thông báo!"><i
+                                class="icon bi bi-bell nav-link" style="margin-top: 6px; font-size: 25px; "></i></a>
+
+                        <a class="icon-header" href="./cart.html"><i class="icon bi bi-cart2 nav-link"></i></a>
+                        <a class="icon-header" href="./log_in.html"><i class="icon big bi bi-person-circle nav-link"
+                                style="font-size: 30px; padding-top: 10px; padding-bottom: 0px; "></i></a>
+
+                        <script>
+                            var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                                return new bootstrap.Popover(popoverTriggerEl)
+                            })
+                        </script>
+
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--------------------------------------- End Header ---------------------------------->
+
+    <!------------------------------------- Begin Content -------------------------------------->
+    <div class="dmsp_balo">
+        <div class="navbar_dm">
+            <p><a href="./home.html">Trang chủ</a></p>
+            <i class="fa-solid fa-chevron-right" style="color: #030303;"></i>
+            <p><a href="./football.html">Bóng đá</a></p>
+            <i class="fa-solid fa-chevron-right" style="color: #030303;"></i>
+            <p><a href="./football1.html">Áo bóng đá CLB</a></p>
+        </div>
+
+        <div class="content_dm">
+            <div class="sidebar_dm">
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="sidebar_search">
+                        <input required="" placeholder=" Tìm kiếm " style="text-align: center;">
+                        <i class="fa-solid fa-magnifying-glass"
+                            style="color: rgb(255, 255, 255); border: 1px solid black; padding: 4px; background-color: black;"></i>
+                    </div>
+
+                    <div class="dmsp_box_sidebar">
+                        <h3 class="heading">DANH MỤC SẢN PHẨM</h3>
+                        <div class="box-item_sidebar"><a href="">ÁO BÓNG ĐÁ CLB</a></div>
+                        <div class="box-item_sidebar"><a href="">ÁO BÓNG ĐÁ ĐTQG</a></div>
+                        <div class="box-item_sidebar"><a href="">GĂNG TAY THỦ MÔN</a></div>
+                        <div class="box-item_sidebar"><a href="">GIÀY ĐÁ BÓNG</a></div>
+                        <div class="box-item_sidebar"><a href="">TÚI BÓNG ĐÁ</a></div>
+                        <div class="box-item_sidebar"><a href="">PHỤ KIỆN BÓNG ĐÁ</a></div>
+                    </div>
+                    <div class="dmsp_box_sidebar">
+                        <h3 class="heading">DANH MỤC ÁO ĐẤU</h3>
+                        <div class="box-item_sidebar"><a href="">ÁO PREMIER LEAGUE</a></div>
+                        <div class="box-item_sidebar"><a href="">ÁO BUNDESLIGA</a></div>
+                        <div class="box-item_sidebar"><a href="">ÁO LALIGA</a></div>
+                        <div class="box-item_sidebar"><a href="">ÁO LIGUE 1</a></div>
+                        <div class="box-item_sidebar"><a href="">ÁO SERIA A</a></div>
+                    </div>
+                </div>
+                <div class="sidebar_button" style="font-size:25px;" onclick="openNav()">&#9776; </div>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidenav").style.width = "330px";
+                        document.body.style.backgroundColor = "rgba(0,0,0,0.1)";
+                        document.querySelectorAll('.img-fluid').forEach(function (img) {
+                            img.classList.add('blurred');
+                        });
+                    }
+
+                    function closeNav() {
+                        document.getElementById("mySidenav").style.width = "0";
+                        document.body.style.backgroundColor = "white";
+                        document.querySelectorAll('.img-fluid').forEach(function (img) {
+                            img.classList.remove('blurred');
+                        });
+                    }
+                </script>
+            </div>
+            <div class="left_side">
+                <div class="search_box">
+                    <input required="" placeholder=" Tìm kiếm ">
+                    <div class="search_icon"><i class="fa-solid fa-magnifying-glass" style="color: white;"></i></div>
+                </div>
+                <div class="dmsp_box">
+                    <h3 class="heading">DANH MỤC SẢN PHẨM</h3>
+                    <div class="box-item"><a href="">ÁO BÓNG ĐÁ CLB</a></div>
+                    <div class="box-item"><a href="">ÁO BÓNG ĐÁ ĐTQG</a></div>
+                    <div class="box-item"><a href="">GĂNG TAY THỦ MÔN</a></div>
+                    <div class="box-item"><a href="">GIÀY ĐÁ BÓNG </a></div>
+                    <div class="box-item"><a href="">TÚI BÓNG ĐÁ </a></div>
+                    <div class="box-item"><a href="">PHỤ KIỆN BÓNG ĐÁ </a></div>
+                </div>
+                <div class="dmsp_box">
+                    <h3 class="heading">DANH MỤC ÁO ĐẤU</h3>
+                    <div class="box-item"><a href="">ÁO PREMIER LEAGUE</a></div>
+                    <div class="box-item"><a href="">ÁO BUNDESLIGA</a></div>
+                    <div class="box-item"><a href="">ÁO LALIGA</a></div>
+                    <div class="box-item"><a href="">ÁO LIGUE 1 </a></div>
+                    <div class="box-item"><a href="">ÁO SERIA A </a></div>
+                </div>
+                <div class="bvm_box">
+                    <h3 class="heading">BÀI VIẾT MỚI</h3>
+                    <img src="assets/img/content/discover/tietlo_arsenal.jpg" alt=""
+                        style="border-radius: 50% ; margin-right: 10px; height: 30px; width: 20%;">
+                    <p><a href="./posts.html">Tiết lộ áo bóng đá Asernal mùa giải mới 23/24</a></p>
+                    <img src="assets/img/content/discover/chinhthuc_inter.jpg" alt=""
+                        style="border-radius: 50%; margin-right: 10px; height: 30px;">
+                    <p><a href="">Chính thức ra mắt áo Inter Milan mùa giải mới 23/24</a></p>
+                    <img src="assets/img/content/discover/chinhthuc_bayer.jpg" alt=""
+                        style="border-radius: 50%; margin-right: 10px;margin-top: 6px; height: 30px;">
+                    <p><a href="">Chính thức ra mắt áo Bayern Munich sân khách mẫu 3 mùa giải mới</a></p>
+                    <img src="assets/img/content/discover/chinhthuc_arsenal.jpg" alt=""
+                        style="border-radius: 50%; margin-right: 10px;margin-top: 6px ;height: 30px;">
+                    <p><a href="">Chính thức ra mắt áo Arsenal sân khách mùa giải 23/24</a></p>
+                </div>
+
+            </div>
+            <div class="right_side">
+                <h3 class="page_heading"> <span><i class="fa-regular fa-heart"></i></span> TẤT CẢ ÁO ĐẤU CLB MÙA
+                    2023/2024</h3>
+                <div class="content_sp">
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/tottenham.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO TOTTENHAM SÂN NHÀ MÙA 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                6.1k</span>
+                            <p class="price">220.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/arsenal-sk.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ ARSENAL SÂN KHÁCH 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                4.2k</span>
+                            <p class="price">195.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/barca.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ BARCA SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                3.9k</span>
+                            <p class="price">135.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/bayer.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ BAYERN MUCICH SÂN NHÀ 23/24</p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                3.7k</span>
+                            <p class="price">205.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/mancity-sk.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO MANCHESTER CITY SÂN KHÁCH 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                1.5k</span>
+                            <p class="price">125.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/paris.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ PSG SÂN NHÀ 23/24
+                            </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                4.1k</span>
+                            <p class="price">295.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/real.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ REAL MADRID SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                6.1k</span>
+                            <p class="price">1.395.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/juventus.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ JUVENTUS SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                1.6k</span>
+                            <p class="price">225.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/ac-milan.jpg" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ AC MILAN SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                3.4k</span>
+                            <p class="price">135.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/inter.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ INTER MILAN SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                2.8k</span>
+                            <p class="price">200.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/dortmund.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO DORTMUND SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                5.3k</span>
+                            <p class="price">215.000đ</p>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="sanpham">
+                            <img src="assets/img/content/aoclb/livepoor.png" alt="" class="img-fluid">
+                            <p class="namesp"> ÁO BÓNG ĐÁ LIVEPPOR SÂN NHÀ 23/24 </p>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+                            <i class="fa-solid fa-star" style="color: #1c61d9;"></i><span class="sale">Đã bán
+                                4.2k</span>
+                            <p class="price">155.000đ</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="switch">
+                    <p class="sw_l"><a href="">...</a></p>
+                    <p class="sw_ml"><a href="">1</a></p>
+                    <p class="sw_mr"><a href="">2</a></p>
+                    <p class="sw_r"><a href="">3</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------- End Content -------------------------------------->
+
+    <!------------------------------- Begin Footer --------------------------------------->
+    <footer class="footer">
+        <div class="company">
+            <div class="grid_column_c">
+                <h3 class="footer_heading">Công ty TNHH SuperSport</h3>
+                <li class="text1">Văn phòng: 182 Lê Duẩn, Bến Thủy,<br> TP.Vinh, Nghệ An</li>
+                <li class="text1">Địa chỉ kho: 52 Võ Thị Sáu, Bến Thủy,<br>TP. Vinh, Nghệ An</li>
+                <li class="text1">Tổng đài: 1900 37 37 52 </li>
+                <li class="text1">Mã số doanh nghiệp: NA301910 </li>
+                <li class="text1">Ngày cấp: 19/10/2010</li>
+            </div>
+        </div>
+        <div class="grid_column">
+            <div class="vsp">
+                <h3 class="footer_heading">Về SuperSport</h3>
+                <li><a href="#">Giới thiệu</a></li>
+                <li><a href="#">Liên hệ</a></li>
+            </div>
+        </div>
+        <div class="grid_column">
+            <div class="dm">
+                <h3 class="footer_heading">Danh mục</h3>
+
+                <li><a href="./football.html">Đồ bóng đá</a></li>
+                <li><a href="#">Đồ leo núi</a></li>
+                <li><a href="#">Đồ golf</a></li>
+                <li><a href="#">Đồ cầu lông</a></li>
+            </div>
+        </div>
+        <div class="grid_column">
+            <div class="tg">
+                <h3 class="footer_heading">Theo dõi</h3>
+                <img src="assets/img/footer/facebook.png" width="15px" alt="">
+                SuperSportVinh
+                <br>
+                <img src="assets/img/footer/Instagram.png" width="15px" alt=""> supersportvinhvn <br>
+                <img src="assets/img/footer/TikTok.jpg" width="15px" alt=""> supersportvinhvn
+            </div>
+        </div>
+        <div class="grid_column">
+            <div class="tt">
+                <h3 class="footer_heading">Phương thức thanh toán</h3>
+
+                <img src="assets/img/footer/pay1.jpg" width="15px" alt="">
+                <img src="assets/img/footer/pay2.jpg" width="15px" alt="">
+                <img src="assets/img/footer/pay3.jpg" width="15px" alt="">
+                <img src="assets/img/footer/pay4.jpg" width="15px" alt="">
+                <img src="assets/img/footer/pay5.jpg" width="15px" alt="">
+                <br>
+                <div class="logott">
+                    <img src="assets/img/footer/pay6.jpg" width="100px" alt=""><br>
+                    <img src="assets/img/footer/pay7.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            © Bản quyền thuộc về SuperSport
+        </div>
+    </footer>
+    <!------------------------------- End Footer --------------------------------------------->
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperSport - Cart</title>
+    <link rel="stylesheet" href="./assets/css/cart.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <!------------------------------------------------ Begin Main  ------------------------------------------->
+    <div id="main">
+        <!--------------------------------------- Begin Header ---------------------------------->
+        <div class="header sticky-top">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-2" href="./home.html">
+                        <span><i class="fa-regular fa-paper-plane icon-logo-web"></i></span>
+                        <span class="text-logo-web">Super</span>Sport
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div iv class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./home.html">Trang chủ</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Danh mục sản phẩm
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./football.html">Bóng đá</a></li>
+                                    <li><a class="dropdown-item" href="#">Golf</a></li>
+                                    <li><a class="dropdown-item" href="#">Cầu lông</a></li>
+                                    <li><a class="dropdown-item" href="#">Leo núi</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./introduce.html">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Liên hệ</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <a class="icon-header" href="#" title="Thông báo" data-bs-toggle="popover"
+                                data-bs-placement="bottom" data-bs-content="Không có thông báo!"><i
+                                    class="icon bi bi-bell nav-link" style="margin-top: 6px; font-size: 25px; "></i></a>
+
+                            <a class="icon-header" href="./cart.html"><i class="icon bi bi-cart2 nav-link"></i></a>
+                            <a class="icon-header" href="./log_in.html"><i class="icon big bi bi-person-circle nav-link"
+                                    style="font-size: 30px; padding-top: 10px; padding-bottom: 0px; "></i></a>
+
+                            <script>
+                                var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+                                var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                                    return new bootstrap.Popover(popoverTriggerEl)
+                                })
+                            </script>
+
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--------------------------------------- End Header ---------------------------------->
+
+        <!---------------------------------- Begin Content --------------------------------------->
+        <div class="content-cart-section">
+            <div class="product-cart">
+                <div class="images-product-cart">
+                    <div class="img-product">
+                        <img src="assets/img/content/cart/cart-product/aodtqg1-cart.jpg" alt=""
+                            class="img-product-cart">
+                    </div>
+
+                    <div class="images-description-cart">
+                        <div class="img-desc-cart">
+                            <img src="assets/img/content/cart/cart-product/aodtqg1-cart.jpg" alt=""
+                                class="img-desc-product noblur">
+                        </div>
+
+                        <div class="img-desc-cart">
+                            <img src="assets/img/content/cart/cart-product/img1-cart-desc.jpg" alt=""
+                                class="img-desc-product">
+                        </div>
+
+                        <div class="img-desc-cart">
+                            <img src="assets/img/content/cart/cart-product/img2-desc-cart.jpg" alt=""
+                                class="img-desc-product">
+                        </div>
+
+                        <div class="img-desc-cart">
+                            <img src="assets/img/content/cart/cart-product/img3-desc-cart.jpg" alt=""
+                                class="img-desc-product">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="import-cart">
+                    <div class="cart-heading-product">
+                        <h3 class="desc-heading-cart">Áo đội tuyển quốc gia Bồ Đào Nha sân khách</h3>
+                        <hr class="horizontal-rule">
+                        <p><span class="money-sale">250.000đ</span><span class="money-cart">220.000đ</span></p>
+
+                        <div class="img-in-ao">
+                            <img src="assets/img/content/cart/cart-product/img-in-ao.png" alt="" class="img-in-cart">
+                        </div>
+
+                        <div class="description-cart-one">
+                            <p>Áo bóng đá Bồ Đào Nha sân khách năm 2023</p>
+                            <p>-Hàng VN giá <span class="money-cart-km">Khuyến mãi còn 220.000</span> VNĐ /1 bộ </p>
+                            <p><span class="money-cart-km">Từ 10 bộ trở lên: 150.000VNĐ /1 bộ.</span></p>
+                        </div>
+
+                        <form action="" name="frm" class="cart-form">
+                            <label for="" class="size-choose">Size: </label>
+                            <select name="Cart" onchange="Choosecart();" class="font-size-select">
+                                <option value="">Chọn một tùy chọn</option>
+                                <option value="">Size S</option>
+                                <option value="">Size M</option>
+                                <option value="">Size L</option>
+                                <option value="">Size XL</option>
+                                <option value="">Size 2XL</option>
+                                <option value="">Size 3XL</option>
+                            </select>
+                        </form>
+
+                        <form action="" name="frm" class="cart-form">
+                            <label for="" class="material-choose">Chất liệu: </label>
+                            <select name="Cart" onchange="Choosecart();" class="font-size-select">
+                                <option value="">Chọn một tùy chọn</option>
+                                <option value="">Vải thun lạnh</option>
+                                <option value="">Vải thun lạnh 2 chiều</option>
+                                <option value="">Vải thun lạnh 4 chiều</option>
+                                <option value="">Vải thun mè polyme</option>
+                                <option value="">Vải gai mịn</option>
+                                <option value="">Vải gai thường</option>
+                            </select>
+                        </form>
+
+                        <div class="increase-product-cart">
+                            <div class="quantity-cart-number">
+                                <button class="btn-add-cart" onclick="decreaseQuantity()">-</button>
+                                <span id="quantity" class="btn-add-cart1">1</span>
+                                <button class="btn-add-cart" onclick="increaseQuantity()">+</button>
+                            </div>
+
+                            <script>
+                                var quantityElement = document.getElementById('quantity');
+                                function decreaseQuantity() {
+                                    var currentQuantity = parseInt(quantityElement.innerText);
+
+                                    if (currentQuantity > 1) {
+                                        quantityElement.innerText = currentQuantity - 1;
+                                    }
+                                }
+
+                                function increaseQuantity() {
+                                    var currentQuantity = parseInt(quantityElement.innerText);
+                                    quantityElement.innerText = currentQuantity + 1;
+                                }
+                            </script>
+
+                            <div class="button-buy"><a href="add_to_cart.html">Add to cart</a></div>
+
+                        </div>
+
+                        <div class="promotion-cart">
+                            <i class="fa-solid fa-gift promotion-icon"></i>
+                            <p class="text-heading-desc">ƯU ĐÃI HẤP DẪN:</p>
+                            <p class="text-cart-desc">Ưu đãi hấp dẫn khi đặt đội, liên hệ ngay để được tư vấn chi tiết.
+                            </p>
+                        </div>
+
+                        <div class="promotion-cart">
+                            <i class="fa-solid fa-rotate-right promotion-icon"></i>
+                            <p class="text-heading-desc">ĐỔI HÀNG DỄ DÀNG:</p>
+                            <p class="text-cart-desc">Hổ trợ đổi size, đổi mẫu nếu nhận hàng mà không ưng ý.</p>
+                        </div>
+
+                        <div class="promotion-cart">
+                            <i class="fa-solid fa-truck promotion-icon"></i>
+                            <p class="text-heading-desc">CHÍNH SÁCH GIAO HÀNG:</p>
+                            <p class="text-cart-desc">Giao hàng nhanh chóng toàn quốc, nhận hàng kiểm tra mới thanh toán.</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="about-product">
+                    <div class="desc">Mô tả</div>
+                    <div class="description-cart">
+                        <div class="text-desc-cart">
+                            <p class="text-cart1">
+                                Áo Bồ Đào Nha sân khách sử dụng gam màu trắng cho chủ đạo nền,
+                                kết hợp cùng màu xanh đen Navy cho các chi tiết và màu phụ.
+                            </p>
+
+                            <div class="detail-cart">
+                                <p class="text-deail-li">Chi tiết áo Bồ Đào Nha sân khách năm 2023</p>
+                                <ul class="detail-product">
+                                    <li>Chất liệu: 100% Polyester - Thun lạnh co giản và thấm hút / Thoát mồ hôi tốt
+                                    </li>
+                                    <li>Kiểu dáng: Regular Form - Form suông châu Á</li>
+                                    <li>Size: S - M - L - XL - 2XL</li>
+                                    <li>Logo thêu chỉ chắc chắn, các hoạ tiết in chuyển sắc nét.</li>
+                                </ul>
+                            </div>
+
+                            <div class="detail-cart">
+                                <p class="text-deail-li">Bảng size tư vấn áo đấu Bồ Đào Nha sân Khách năm 2023:</p>
+                                <p>
+                                    Bảng size tư vấn mang tình chất tham khảo dựa trên chiều cao
+                                    và cân nặng chuẩn của người mẫu mặc trên cơ thể. Để được tư
+                                    vấn chính xác hơn bạn có thể nhắn tin trực tiếp Sporter để được
+                                    tư vấn kỹ hơn về bảng size hoặc ghé trực tiếp Sporter để thử
+                                    size và mua trực tiếp nhé.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="img-size-cart">
+                            <img src="assets/img/content/cart/cart-product/table-size.png" alt="" class="table-size">
+                        </div>
+
+                        <div class="detail-wid">
+                            <p class="text-deail-li">Áo bóng đá Bồ Đào Nha sân khách năm 2023 hàng Việt Nam</p>
+                            <p>
+                                Các sản phẩm trang phục áo đá banh câu lạc bộ được bán nhiều trên thị trường, từ
+                                nhiều xưởng uy tín tại Việt Nam. SuperSport tin tưởng và chọn giúp bạn những sản phẩm
+                                với chất lượng tốt nhất và giống với áo đấu nhất. Các mẫu áo hàng Việt Nam sẽ không
+                                có logo của các nhà sản xuất thể thao ở ngực phải (Vì lý do bản quyền hình ảnh).
+                            </p>
+
+                            <ul class="detail-product">
+                                <li>Thiết kế Regular Form, form suông mặc thoải mái và phù hợp nhiều vóc dáng. Form size
+                                    Châu á</li>
+                                <li>Giá thành rẻ hơn hàng Thái Lan, tiết kiệm chi phí.</li>
+                                <li>Độ bền tương xứng với giá tiền, có thể sử dụng lên đến 2 năm.</li>
+                                <li>Các logo được thêu vào, tránh được trường hợp bong tróc.</li>
+                                <li>Chất liệu thun lạnh co giản 2 chiều, nhưng đã được cải thiện tốt hơn theo thời gian.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------- End Content --------------------------------------->
+
+        <!--------------------------------------- Begin Footer-------------------------------------->
+        <footer class="footer">
+            <div class="company">
+                <div class="grid_column_c">
+                    <h3 class="footer_heading">Công ty TNHH SuperSport</h3>
+                    <li class="text1">Văn phòng: 182 Lê Duẩn, Bến Thủy,<br> TP.Vinh, Nghệ An</li>
+                    <li class="text1">Địa chỉ kho: 52 Võ Thị Sáu, Bến Thủy,<br>TP. Vinh, Nghệ An</li>
+                    <li class="text1">Tổng đài: 1900 37 37 52 </li>
+                    <li class="text1">Mã số doanh nghiệp: NA301910 </li>
+                    <li class="text1">Ngày cấp: 19/10/2010</li>
+                </div>
+            </div>
+            <div class="grid_column">
+                <div class="vsp">
+                    <h3 class="footer_heading">Về SuperSport</h3>
+                    <li><a href="./introduce.html">Giới thiệu</a></li>
+                    <li><a href="./contact.html">Liên hệ</a></li>
+                </div>
+            </div>
+            <div class="grid_column">
+                <div class="dm">
+                    <h3 class="footer_heading">Danh mục</h3>
+                    <li><a href="./football.html">Đồ bóng đá</a></li>
+                    <li><a href="#">Đồ leo núi</a></li>
+                    <li><a href="#">Đồ golf</a></li>
+                    <li><a href="#">Đồ cầu lông</a></li>
+                </div>
+            </div>
+            <div class="grid_column">
+                <div class="tg">
+                    <h3 class="footer_heading">Theo dõi</h3>
+                    <img src="assets/img/footer/facebook.png" width="15px" alt="">
+                    SuperSportVinh
+                    <br>
+                    <img src="assets/img/footer/Instagram.png" width="15px" alt=""> supersportvinhvn <br>
+                    <img src="assets/img/footer/TikTok.jpg" width="15px" alt=""> supersportvinhvn
+                </div>
+            </div>
+            <div class="grid_column">
+                <div class="tt">
+                    <h3 class="footer_heading">Phương thức thanh toán</h3>
+                    <img src="assets/img/footer/pay1.jpg" width="15px" alt="">
+                    <img src="assets/img/footer/pay2.jpg" width="15px" alt="">
+                    <img src="assets/img/footer/pay3.jpg" width="15px" alt="">
+                    <img src="assets/img/footer/pay4.jpg" width="15px" alt="">
+                    <img src="assets/img/footer/pay5.jpg" width="15px" alt="">
+                    <br>
+                    <div class="logott">
+                        <img src="assets/img/footer/pay6.jpg" width="100px" alt=""><br>
+                        <img src="assets/img/footer/pay7.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                © Bản quyền thuộc về SuperSport
+            </div>
+        </footer>
+        <!--------------------------------------- End Footer-------------------------------------->
+    </div>
+    <!------------------------------------------------ End Main  ------------------------------------------->
+</body>
+
+</html>

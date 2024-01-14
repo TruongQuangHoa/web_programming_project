@@ -1,0 +1,78 @@
+/* Begin Css login */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ececec;
+}
+
+.box-area {
+    width: 930px;
+}
+
+.right-box {
+    padding: 40px 30px 40px 40px;
+}
+
+::placeholder {
+    font-size: 16px;
+}
+
+.rounded-4 {
+    border-radius: 20px;
+}
+
+.rounded-5 {
+    border-radius: 30px;
+}
+
+.login {
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 2em;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.forgot {
+    position: relative;
+}
+
+.close-btn-fgpw {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-right: 10px;
+    color: #000;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .box-area {
+        margin: 0 10px;
+
+    }
+
+    .left-login {
+        display: none;
+    }
+
+
+    .right-box {
+        padding: 20px;
+    }
+
+}

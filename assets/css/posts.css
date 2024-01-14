@@ -1,0 +1,410 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+/* Begin CSS Header */
+.navbar-brand {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+
+.text-logo-web {
+    color: red;
+}
+
+.icon-logo-web {
+    font-size: 30px;
+}
+
+.nav-item a {
+    font-size: 16px;
+}
+
+.icon {
+    color: #f0f8ff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.icon:last-child {
+    font-size: 30px;
+}
+
+.icon-header i {
+    color: rgba(255, 255, 255, .55);
+}
+
+.icon-header i:hover {
+    color: rgba(255, 255, 255, .80);
+}
+
+.heading {
+    display: block;
+    text-align: center;
+    justify-content: center;
+}
+
+.title {
+    position: relative;
+    color: white;
+    margin-top: -170px;
+    margin-bottom: 150px;
+
+}
+
+.content {
+    margin: auto;
+    border: 2px solid rgb(215, 214, 227);
+    width: 850px;
+    align-items: center;
+
+}
+
+.content_item {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+.content_item h1 {
+    color: #ff6f28;
+    font-weight: bolder;
+    font-size: 25px;
+    line-height: 1.3;
+}
+
+.content_item h3 {
+    font-size: 20px;
+}
+
+.mockup_left {
+    padding-right: 20px;
+}
+
+.mockup_right {
+    padding-left: 20px;
+}
+
+.mockup_image {
+    margin-bottom: 15px;
+}
+
+.badge_left {
+    padding-right: 20px;
+}
+
+.badge_right {
+    padding-left: 20px;
+}
+
+.badge_image {
+    margin-bottom: 15px;
+}
+
+.arsenal_sannha {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.arsenal_sannha img{
+    width: 390px; 
+    height: 421px;
+}
+.arsenal_sannha_1{
+    padding-right: 25px;
+}
+.arsenal_sankhach {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.arsenal_sankhach img{
+    width: 390px; 
+    height: 421px;
+}
+.arsenal_sankhach_1{
+    padding-right: 25px;
+}
+.arssenal_sankhach_mauba {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.arssenal_sankhach_mauba_1{
+    padding-right: 25px;
+}
+.arssenal_sankhach_mauba img{
+    width: 390px; 
+    height: 421px;
+    
+}
+.mockup_image img {
+    width: 260px;
+    height: 230px;
+}
+
+.badge_image img {
+    width: 260px;
+    height: 230px;
+}
+
+@media (max-width: 890px) {
+    .content {
+        width: 95%;
+    }
+
+    .arsenal_cloath_intel {
+        width: 100%;
+        height: auto;
+        display: block;
+        max-width: 100%;
+        
+    }
+}
+
+@media (max-width:884px) {
+    .mockup_image {
+        display: flex;
+        flex-direction: column;
+    }
+    .mockup_image img{
+        width: 100%;
+        height: 720px;
+    }
+    .mockup_left {
+        padding-right: 0;
+        margin: 20px auto;
+    }
+
+    .mockup_right {
+        padding-left: 0;
+        margin: 20px auto;
+    }
+
+    .mockup_middle {
+        margin: 20px auto;
+    }
+    .badge_image{
+        display: flex;
+        flex-direction: column;
+    }
+    .badge_image img{
+        width: 100%;
+        height: 720px;
+    }
+    .badge_left{
+        padding-right: 0;
+        margin: 20px auto;
+    }
+    .badge_middle{
+        margin: 20px auto;
+    }
+    .badge_right{
+        padding-left: 0;
+        margin: 20px auto;
+    }
+    .arsenal_sankhach img{
+        width: 100%;
+        height: 720px;
+        margin-bottom: 25px ;
+    }
+    .arsenal_sankhach_1{
+        padding-right: 0;
+    }
+    .arssenal_sankhach_mauba img{
+        width: 100%; 
+        height: 720px;
+        margin-bottom: 25px;
+    }
+    .arssenal_sankhach_mauba_1{
+        padding-right: 0;
+    }
+    .arsenal_sannha img{
+        width: 100%; 
+        height: 720px;
+        margin-bottom: 25px;
+    }
+    .arsenal_sannha_1{
+        padding-right: 0;
+    }
+}
+
+/* Begin CSS Footer */
+.footer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    background-color: #f4f4f4;
+    padding: 40px 8% 60px;
+    bottom: 0;
+    z-index: 0;
+}
+
+.grid_column {
+
+    padding: 18px;
+    line-height: 1.4;
+}
+
+.grid_column_c {
+    padding: 18px;
+    line-height: 1.4;
+}
+
+.footer_heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.grid_column li:hover a {
+    color: rgb(9, 211, 36);
+}
+
+.grid_row {
+    flex: 1;
+}
+
+.grid_column li {
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.grid_column li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.grid_column_c li {
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.grid_column_c li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.logott {
+    line-height: 25px;
+    padding-top: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+}
+
+.thanh-toan {
+    width: 30px;
+    height: 25px;
+}
+
+@media (max-width: 1190px) {
+
+    .grid_column:nth-child(4),
+    .grid_column:nth-child(5) {
+        grid-row: 2;
+    }
+}
+
+@media (max-width: 960px) {
+
+    .tg img {
+        margin-right: 10px;
+    }
+
+
+    .company {
+        grid-column: span 2;
+    }
+
+    .grid_column_c {
+        grid-row: 1;
+    }
+
+    .text1 br {
+        display: none;
+    }
+
+    .grid_column:nth-child(4),
+    .grid_column:nth-child(5),
+    .grid_column:nth-child(3) {
+        grid-row: 2;
+    }
+
+    .posts button, .posts a {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .grid_column:nth-child(4),
+    .grid_column:nth-child(5),
+    .grid_column:nth-child(3) {
+        grid-row: 3;
+    }
+
+    .text1 br {
+        display: initial;
+    }
+
+    .tg img {
+        margin-right: 2px;
+    }
+}
+
+@media (max-width:571px) {
+    .tg {
+        margin-left: -38px;
+    }
+}
+
+@media (max-width: 560px) {
+    .text1 br {
+        display: none;
+    }
+}
+
+@media (max-width: 510px) {
+    .footer {
+        display: block;
+    }
+
+    .dm,
+    .tt {
+        margin-left: 0px;
+    }
+
+    .tg {
+        margin-left: 0;
+    }
+
+    .posts button, .posts a {
+        font-size: 14px;
+        border-radius: 45px;
+    }
+
+    .text-posts {
+        border-radius: 45px;
+    }
+}

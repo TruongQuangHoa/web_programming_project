@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperSport</title>
+  <link rel="stylesheet" href="./assets/css/home.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <!--------------------------------------- Begin Header ---------------------------------->
+  <div class="header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="./home.html">
+          <span><i class="fa-regular fa-paper-plane icon-logo-web"></i></span>
+          <span class="text-logo-web">Super</span>Sport
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div iv class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./home.html">Trang chủ</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Danh mục sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="./football.html">Bóng đá</a></li>
+                <li><a class="dropdown-item" href="#">Golf</a></li>
+                <li><a class="dropdown-item" href="#">Cầu lông</a></li>
+                <li><a class="dropdown-item" href="#">Leo núi</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./introduce.html">Giới thiệu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Liên hệ</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <a class="icon-header" href="#" title="Thông báo" data-bs-toggle="popover" data-bs-placement="bottom"
+              data-bs-content="Không có thông báo!"><i class="icon bi bi-bell nav-link"
+                style="margin-top: 6px; font-size: 25px; "></i></a>
+
+            <a class="icon-header" href="./cart.html"><i class="icon bi bi-cart2 nav-link"></i></a>
+            <a class="icon-header" href="./log_in.html"><i class="icon big bi bi-person-circle nav-link"
+                style="font-size: 30px; padding-top: 10px; padding-bottom: 0px; "></i></a>
+
+            <script>
+              var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+              var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+                return new bootstrap.Popover(popoverTriggerEl)
+              })
+            </script>
+
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--------------------------------------- End Header ---------------------------------->
+
+  <!--------------------------------------- Begin Slider ------------------------------->
+  <div style="margin-bottom: 40px;" id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/slider/slider1-home page.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slider/slider2-home page.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slider/slider3-home page.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/slider/slider4-home page.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon icons" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--------------------------------------- End Slider ---------------------------------------------->
+
+  <!--------------------------------------- Begin Product Portfolio ---------------------------------->
+  <div class="content-portfolio">
+    <div class="title">
+      <h2 class="title-center">Danh Mục Sản Phẩm</h2>
+    </div>
+
+    <div class="cards">
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/ao-bong-da-dmsp.webp" alt="" class="col-img">
+        <div class="text">
+          <a href="./football1.html" class="col-text">Áo đá bóng</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/aogolf-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Áo golf</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/giaydabong-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Giày đá bóng</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/giaygolf-dmsp.jpg" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Giày golf</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/baloleonui-dmsp.webp" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Balo</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/aocaulong-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Áo cầu lông</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/aoleonui-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Áo leo núi</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/giaycaulong-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Giày cầu lông</a>
+        </div>
+      </div>
+
+      <div class="column">
+        <img src="assets/img/content/product_portfolio/giayleonui-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Giày leo núi</a>
+        </div>
+      </div>
+
+      <div class="column hide-product">
+        <img  src="assets/img/content/product_portfolio/tuibongda-dmsp.png" alt="" class="col-img">
+        <div class="text">
+          <a href="#" class="col-text">Túi thể thao</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--------------------------------------- End Product Portfolio ---------------------------------->
+
+  <!--------------------------------------- Begin Product Hot -------------------------------------->
+  <div style="max-width: 90%;" class="container-fluid hot">
+    <h2 class="text-center mb-5 mt-3">Sản Phẩm Hot</h2>
+    <div class="row row-cols-xl-5 row-cols-md-4 row-cols-2">
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/football1-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-25%</h4>
+          <div class="card-body">
+            <p><a class="click-buy" href="cart1.html">Áo đội tuyển quốc gia Bồ Đào Nha sân khách</a></p>
+            <p>
+              <span class="del-price"><s>250.000đ</s></span>
+              <span class="new-price">220.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 4.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/football2-hot.webp" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-10%</h4>
+          <div class="card-body">
+            <p><a>NIKE AIR ZOOM MERCURIAL SUPERFLY</a></p>
+            <p>
+              <span class="del-price"><s>1.395.000đ</s></span>
+              <span class="new-price">950.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 3.7k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/football3-hot.webp" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <div class="card-body">
+            <p><a>Găng tay thủ môn Adidas Competition</a></p>
+            <p>
+              <span class="del-price"><s>1.155.000đ</s></span>
+              <span class="new-price">975.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/football4-hot.jpeg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-5%</h4>
+          <div class="card-body">
+            <p><a>BỌC ỐNG ĐỒNG ADIDAS TIRO CLUB</a></p>
+            <p>
+              <span class="del-price"><s>480.000đ</s></span>
+              <span class="new-price">300.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 3.4k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/football5-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-20%</h4>
+          <div class="card-body">
+            <p><a>TÚI ĐỰNG GIÀY 2 NGĂN CLB MU</a></p>
+            <p>
+              <span class="del-price"><s>80.000đ</s></span>
+              <span class="new-price">60.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.9k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/climbing1-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-20%</h4>
+          <div class="card-body">
+            <p><a>Túi ngủ Nature Envelope Wash hdeueg</a></p>
+            <p>
+              <span class="del-price"><s>940.000đ</s></span>
+              <span class="new-price">790.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 5.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/climbing2-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <div class="card-body">
+            <p><a>Balo leo núi Under Armour ERL09</a></p>
+            <p>
+              <span class="del-price"><s>525.000đ</s></span>
+              <span class="new-price">475.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/climbing3-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-10%</h4>
+          <div class="card-body">
+            <p><a>Lều cắm trại 4 người Naturehike</a></p>
+            <p>
+              <span class="del-price"><s>950.000đ</s></span>
+              <span class="new-price">875.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 4.9k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/climbing4-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-15%</h4>
+          <div class="card-body">
+            <p><a>Áo khoác hiking chống thấm nước</a></p>
+            <p>
+              <span class="del-price"><s>245.000đ</s></span>
+              <span class="new-price">200.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.2k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/climbing5-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-35%</h4>
+          <div class="card-body">
+            <p><a>Gậy leo núi Naturehike Trekking</a></p>
+            <p>
+              <span class="del-price"><s>1.150.000đ</s></span>
+              <span class="new-price">975.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 3.5k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/golf1-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-15%</h4>
+          <div class="card-body">
+            <p><a>Áo golf ngắn tay Lecoq Lecoq QGW003</a></p>
+            <p>
+              <span class="del-price"><s>525.000đ</s></span>
+              <span class="new-price">375.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 3.4k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/golf2-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-25%</h4>
+          <div class="card-body">
+            <p><a>Mũ golf always smile 52MW1203</a></p>
+            <p>
+              <span class="del-price"><s>120.000đ</s></span>
+              <span class="new-price">100.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.8k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/golf3-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-5%</h4>
+          <div class="card-body">
+            <p><a>Áo lạnh TaylorMade 2WSWI-TJ238</a></p>
+            <p>
+              <span class="del-price"><s>1.125.000đ</s></span>
+              <span class="new-price">975.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 5.3k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/golf4-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-10%</h4>
+          <div class="card-body">
+            <p><a>Chân váy golf Lecoq QGWVJE06V1</a></p>
+            <p>
+              <span class="del-price"><s>325.000đ</s></span>
+              <span class="new-price">175.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 4.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/golf5-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <div class="card-body">
+            <p><a>Áo dài tay golf PXG100 MNS05 black</a></p>
+            <p>
+              <span class="del-price"><s>1.125.000đ</s></span>
+              <span class="new-price">900.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 6.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/badminton1-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-25%</h4>
+          <div class="card-body">
+            <p><a>Áo Cầu Lông Yonex 6501 Nam - Trắng</a></p>
+            <p>
+              <span class="del-price"><s>225.000đ</s></span>
+              <span class="new-price">175.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 4.3k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/badminton2-hot.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-10%</h4>
+          <div class="card-body">
+            <p><a>Quần Cầu Lông Victor 9208 - Đen Đỏ</a></p>
+            <p>
+              <span class="del-price"><s>125.000đ</s></span>
+              <span class="new-price">75.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 5.6k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/badminton3.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <div class="card-body">
+            <p><a>Áo Cầu Lông Yonex 22041 Nam - Xanh</a></p>
+            <p>
+              <span class="del-price"><s>275.000đ</s></span>
+              <span class="new-price">195.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 6.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/badminton4.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-20%</h4>
+          <div class="card-body">
+            <p><a>Váy Cầu Lông Yonex 92006 - Xanh Navy</a></p>
+            <p>
+              <span class="del-price"><s>225.000đ</s></span>
+              <span class="new-price">175.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 2.9k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card mb-5  ">
+          <img src="assets/img/content/hot_product/badminton5.jpg" class="bg-image hover-zoom" alt="">
+          <h4 class="new">NEW</h4>
+          <h4 class="sale">-5%</h4>
+          <div class="card-body">
+            <p><a>Áo Cầu Lông Yonex 6501 Nam - Trắng Đỏ</a></p>
+            <p>
+              <span class="del-price"><s>115.000đ</s></span>
+              <span class="new-price">100.000đ</span>
+            </p>
+            <div class="sanpham">
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <i class="fa-solid fa-star" style="color: #1c61d9;"></i>
+              <span class="sell">Đã bán 3.1k</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-------------------------------------------- End Product Hot ----------------------------------------------->
+
+  <!-------------------------------------------- Begin Trandemak  ------------------------------------------------------->
+  <div class="trademark">
+    <div class="titleTh mt-5">
+      <h2 class="heading-item">THƯƠNG HIỆU NỔI BẬT</h2>
+      <div class="thuonghieu">
+        <div class="row">
+          <div class="col">
+            <img src="assets/img/content/trademark/adidas.png" alt="">
+          </div>
+          <div class="col">
+            <img src="assets/img/content/trademark/newbl.png" alt="">
+          </div>
+          <div class="col">
+            <img src="assets/img/content/trademark/nike.png" alt="">
+          </div>
+          <div class="col">
+            <img src="assets/img/content/trademark/speedo.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-------------------------------------------- End Trandemak  --------------------------------------------------------->
+
+
+  <!--------------------------------------- Begin New Posts ---------------------------------->
+  <div class="container posts ">
+    <div class="h2 text-center mb-2 mt-4">DISCOVER</div>
+    <div class="d-flex justify-content-center row row-cols-md-3 row-cols-sm-1 px-5 py-3">
+      <div class="col-md-3 col-lg-3 px-3 col-sm-6 text-posts"><button style="width: 90%;" type="button"
+          class="btn btn-dark my-1 ">Tin khuyến mãi</button></div>
+      <div class="col-md-3 col-lg-3 px-3 col-sm-6 text-posts"><button style="width: 90%; height: 90%;" type="button"
+          class="btn btn-dark my-1 ">Tin nổi bật</button></div>
+      <div class="col-md-3 col-lg-3 px-3 col-sm-6 text-posts"><button style="width: 90%; height: 90%;" type="button"
+          class="btn btn-dark my-1 ">Tin thời trang</button></div>
+    </div>
+    <div class="row row-cols-md-4 row-cols-sm-1 mt-2">
+      <div class="col-md-3 col-sm-6">
+        <div class="row">
+          <img src="assets/img/content/discover/baiviet1.png" alt="" class="w-100">
+          <p class="post"><a href="">Tận hưởng ưu đãi hàng loạt trong buổi khai trương của SuperSport</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="row">
+          <img src="assets/img/content/discover/baiviet2.webp" alt="" class="w-100">
+          <p class="post"><a href="">Top giày NIKE đẹp cho nam đáng lựa chọn nhất 2023</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="row">
+          <img src="assets/img/content/discover/baiviet3.png" alt="" class="w-100">
+          <p class="post"><a href="">Các cách phối đồ cho nữ sành điệu đẹp nhất 2023</a></p>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6">
+        <div class="row">
+          <img src="assets/img/content/discover/baiviet4.png" alt="" class="w-100">
+          <p class="post"><a href="">New Balace tung khuyến mãi siêu khủng: Mua 1 tặng 1</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mb-5 mt-4">
+      <a class="text-posts" style="border-radius: 5px;" href="">Xem Thêm</a>
+    </div>
+
+  </div>
+  <!--------------------------------------- End New Posts ---------------------------------->
+
+  <!--------------------------------------- Begin Footer-------------------------------------->
+  <footer class="footer">
+    <div class="company">
+      <div class="grid_column_c">
+        <h3 class="footer_heading">Công ty TNHH SuperSport</h3>
+        <li class="text1">Văn phòng: 182 Lê Duẩn, Bến Thủy,<br> TP.Vinh, Nghệ An</li>
+        <li class="text1">Địa chỉ kho: 52 Võ Thị Sáu, Bến Thủy,<br>TP. Vinh, Nghệ An</li>
+        <li class="text1">Tổng đài: 1900 37 37 52 </li>
+        <li class="text1">Mã số doanh nghiệp: NA301910 </li>
+        <li class="text1">Ngày cấp: 19/10/2010</li>
+      </div>
+    </div>
+    <div class="grid_column">
+      <div class="vsp">
+        <h3 class="footer_heading">Về SuperSport</h3>
+        <li><a href="./introduce.html">Giới thiệu</a></li>
+        <li><a href="./contact.html">Liên hệ</a></li>
+      </div>
+    </div>
+    <div class="grid_column">
+      <div class="dm">
+        <h3 class="footer_heading">Danh mục</h3>
+        <li><a href="./football.html">Đồ bóng đá</a></li>
+        <li><a href="#">Đồ leo núi</a></li>
+        <li><a href="#">Đồ golf</a></li>
+        <li><a href="#">Đồ cầu lông</a></li>
+      </div>
+    </div>
+    <div class="grid_column">
+      <div class="tg">
+        <h3 class="footer_heading">Theo dõi</h3>
+        <img src="assets/img/footer/facebook.png" width="15px" alt="">
+        SuperSportVinh
+        <br>
+        <img src="assets/img/footer/Instagram.png" width="15px" alt=""> supersportvinhvn <br>
+        <img src="assets/img/footer/TikTok.jpg" width="15px" alt=""> supersportvinhvn
+      </div>
+    </div>
+    <div class="grid_column">
+      <div class="tt">
+        <h3 class="footer_heading">Phương thức thanh toán</h3>
+        <img src="assets/img/footer/pay1.jpg" width="15px" alt="">
+        <img src="assets/img/footer/pay2.jpg" width="15px" alt="">
+        <img src="assets/img/footer/pay3.jpg" width="15px" alt="">
+        <img src="assets/img/footer/pay4.jpg" width="15px" alt="">
+        <img src="assets/img/footer/pay5.jpg" width="15px" alt="">
+        <br>
+        <div class="logott">
+          <img src="assets/img/footer/pay6.jpg" width="100px" alt=""><br>
+          <img src="assets/img/footer/pay7.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © Bản quyền thuộc về SuperSport
+    </div>
+  </footer>
+  <!--------------------------------------- End Footer-------------------------------------->
+  </div>
+</body>
+
+</html>

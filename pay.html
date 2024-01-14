@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/pay.css">
+    <title>Pay</title>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded-5 p-3 bg-white shadow box-area">
+            <div class="header-text mb-4">
+                <h1 style="text-align: center;">Thanh toán</h1>
+            </div>
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+                <div class="mb-3">
+                    <div class="row align-items-center">
+                        <div>
+                            <h5>Thông tin giao hàng</h5>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" required class="form-control bg-light fs-6" placeholder="Họ và tên">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="email" required class="form-control bg-light fs-6" placeholder="Email">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" required class="form-control bg-light fs-6" placeholder="Số điện thoại">
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="text" required class="form-control bg-light fs-6"
+                                placeholder="Địa chỉ giao hàng">
+                        </div>
+                        <h5>Phương thức thanh toán</h5>
+                        <div class="mb-5 d-flex justify-content-between">
+                            <div class="form-check">
+                                <input name="gender" type="radio" value="Tiền mặt" /> Tiền mặt
+                                <br>
+                                <input name="gender" type="radio" value="Chuyển khoản" /> Chuyển khoản
+                            </div>
+                        </div>
+                        <div class="input-group mb-3 Dathang">
+                            <button class="btn btn-primary w-100 fs-6">Xác nhận đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+            
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column thanhtoan">
+                <div class="featured-image mb-3">
+                    <img src="assets/img/content/pay/Cac-ngan-hang-Viet-Nam.jpg" class="img-fluid">
+                </div>
+                <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace; font-weight: 600;">
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
